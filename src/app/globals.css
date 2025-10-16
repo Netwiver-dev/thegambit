@@ -11,6 +11,8 @@ html {
 
 @theme {
 
-  --color-background: #ffffff;
-  --color-foreground: #171717;
+  --color-background: #261D19;
+  --color-button: #1E90FF;
+  --color-button-dark: #1977d6;
+  --color-typography: #fff;
 }
