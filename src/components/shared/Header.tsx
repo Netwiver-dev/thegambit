@@ -26,7 +26,7 @@ const Header = () => {
           href="/"
           className="font-luckiest text-2xl tracking-wide font-bold"
         >
-          De Gambit
+          DeGambit
         </Link>
 
         <a

@@ -21,7 +21,7 @@ const Footer = () => {
               href="/"
               className="font-luckiest text-3xl tracking-wide font-bold"
             >
-              De Gambit
+              DeGambit
             </Link>
             <p className="leading-[30px]">
               The December Chess Tournament is a first of its kind,

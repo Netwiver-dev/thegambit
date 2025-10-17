@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const MINIMUM_DISPLAY_TIME_MS = 1500;
-const TEXT_TO_TYPE = "De Gambit";
+const TEXT_TO_TYPE = "DeGambit";
 const CHARACTER_DELAY_MS = 80; // Delay per character for typing effect
 
 const Preloader: React.FC = () => {
