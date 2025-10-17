@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ArrowIcon from "./icons/ArrowIcon";
 import { CubeIcon } from "./icons/CubeIcon";
+import Image from "next/image";
 
 const Card = ({
   title,
@@ -67,15 +68,14 @@ const Events = () => {
 
             {/* image placeholder */}
             <div className="mt-6 h-36 sm:h-44 md:h-52 lg:h-56 w-56 sm:w-64 md:w-72 rounded-md bg-white/10 ring-1 ring-white/10 grid place-items-center">
-              <svg
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                className="text-typography/40"
-                fill="currentColor"
-              >
-                <path d="M21 19V5a2 2 0 0 0-2-2H5C3.9 3 3 3.9 3 5v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2zM5 5h14v8.6l-2.9-2.9a1 1 0 0 0-1.4 0L10 14.4l-2.3-2.3a1 1 0 0 0-1.4 0L5 13.4V5zm0 14v-3.6l2-2 2.3 2.3a1 1 0 0 0 1.4 0l4.7-4.7 3.6 3.6V19H5zm10-9a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
-              </svg>
+              <Image
+                src="/images/chess1.jpg"
+                alt=""
+                width={400}
+                height={400}
+                className="object-cover w-full h-full transition-all group-hover:scale-110 duration-500 group-hover:opacity-90"
+                priority
+              />
             </div>
 
             <a

@@ -2,11 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import GalleryIcon from "./icons/GalleryIcon";
 import EyeIcon from "./icons/EyeIcon";
 import ShapesIcon from "./icons/ShapesIcon";
 import PuzzleIcon from "./icons/PuzzleIcon";
 import UsersIcon from "./icons/UsersIcon";
+import Image from "next/image";
 
 const Benefits = () => {
   return (
@@ -14,9 +14,14 @@ const Benefits = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-6 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Left image placeholder */}
         <div className="w-full aspect-[4/3] rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center">
-          <div className="w-28 h-20 sm:w-36 sm:h-24 rounded-md bg-white/10 flex items-center justify-center">
-            <GalleryIcon />
-          </div>
+          <Image
+            src="/images/chess2.jpg"
+            alt=""
+            width={400}
+            height={400}
+            className="object-cover w-full h-full transition-all group-hover:scale-110 duration-500 group-hover:opacity-90"
+            priority
+          />
         </div>
 
         {/* Right features */}

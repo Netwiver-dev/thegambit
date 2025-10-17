@@ -1,4 +1,4 @@
-import GalleryIcon from "./icons/GalleryIcon";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -27,10 +27,15 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-10 lg:py-12">
-        <div className="w-full aspect-[16/9] rounded-md bg-white/5 ring-1 ring-white/10 grid place-items-center">
-          <div className="w-28 h-20 sm:w-36 sm:h-24 rounded-md bg-white/10 flex items-center justify-center">
-            <GalleryIcon />
-          </div>
+        <div className="w-full aspect-[16/9] rounded-md bg-white/5 ring-1 ring-white/10 ">
+          <Image
+            src="/images/chess4.webp"
+            alt=""
+            width={400}
+            height={400}
+            className="object-cover w-full h-full transition-all group-hover:scale-110 duration-500 group-hover:opacity-90"
+            priority
+          />
         </div>
       </div>
     </section>
