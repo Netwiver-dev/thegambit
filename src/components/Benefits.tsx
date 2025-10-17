@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import GalleryIcon from "./icons/GalleryIcon";
 import EyeIcon from "./icons/EyeIcon";
 import ShapesIcon from "./icons/ShapesIcon";
@@ -22,38 +23,72 @@ const Benefits = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
           <div className="space-y-3">
             <PuzzleIcon />
-            <h3 className="text-xl font-semibold">Why participate</h3>
-            <p className="text-typography/80">
-              Develop strategic thinking skills through competitive and
-              collaborative experiences
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+              className="space-y-2"
+            >
+              <h3 className="text-xl font-semibold">Why participate</h3>
+              <p className="text-typography/80">
+                Develop strategic thinking skills through competitive and
+                collaborative experiences
+              </p>
+            </motion.div>
           </div>
 
           <div className="space-y-3">
             <UsersIcon />
-            <h3 className="text-xl font-semibold">Community growth</h3>
-            <p className="text-typography/80">
-              Build meaningful connections across tech, creative, and
-              entrepreneurial ecosystems
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+              className="space-y-2"
+            >
+              <h3 className="text-xl font-semibold">Community growth</h3>
+              <p className="text-typography/80">
+                Build meaningful connections across tech, creative, and
+                entrepreneurial ecosystems
+              </p>
+            </motion.div>
           </div>
 
           <div className="space-y-3">
             <ShapesIcon />
-            <h3 className="text-xl font-semibold">Networking opportunities</h3>
-            <p className="text-typography/80">
-              Meet potential mentors, investors, and collaborators in a dynamic
-              environment
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.15 }}
+              className="space-y-2"
+            >
+              <h3 className="text-xl font-semibold">
+                Networking opportunities
+              </h3>
+              <p className="text-typography/80">
+                Meet potential mentors, investors, and collaborators in a
+                dynamic environment
+              </p>
+            </motion.div>
           </div>
 
           <div className="space-y-3">
             <EyeIcon />
-            <h3 className="text-xl font-semibold">Brand visibility</h3>
-            <p className="text-typography/80">
-              Gain exposure and recognition through our comprehensive event
-              platform
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+              className="space-y-2"
+            >
+              <h3 className="text-xl font-semibold">Brand visibility</h3>
+              <p className="text-typography/80">
+                Gain exposure and recognition through our comprehensive event
+                platform
+              </p>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import ArrowIcon from "./icons/ArrowIcon";
 import { CubeIcon } from "./icons/CubeIcon";
 
@@ -8,18 +9,24 @@ const Card = ({
   title,
   desc,
   className = "",
+  delay = 0,
 }: {
   title: string;
   desc: string;
   className?: string;
+  delay?: number;
 }) => (
-  <div
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9, rotate: -1.5 }}
+    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+    viewport={{ once: true, amount: 0.3 }}
+    transition={{ type: "spring", stiffness: 120, damping: 18, delay }}
     className={`bg-white/5 ring-1 ring-white/10 rounded-md p-6 lg:p-8 text-typography ${className}`}
   >
     <CubeIcon />
     <h3 className="mt-5 text-xl font-semibold">{title}</h3>
     <p className="mt-3 text-typography/80 text-sm leading-relaxed">{desc}</p>
-  </div>
+  </motion.div>
 );
 
 const Events = () => {
@@ -36,7 +43,13 @@ const Events = () => {
 
         <div className="mt-10 lg:mt-14 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {/* Big left card */}
-          <div className=" bg-white/5 ring-1 ring-white/10 rounded-md p-6 lg:p-10 flex flex-col justify-between">
+          <motion.div
+            initial={{ opacity: 0, y: 28, scale: 0.98 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, amount: 0.35 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className=" bg-white/5 ring-1 ring-white/10 rounded-md p-6 lg:p-10 flex flex-col justify-between"
+          >
             <div>
               <p className="text-typography/70 text-xs uppercase tracking-wide">
                 Chess
@@ -74,7 +87,7 @@ const Events = () => {
               Register
               <ArrowIcon />
             </a>
-          </div>
+          </motion.div>
 
           {/* Right grid (4 cards) */}
           <div className="grid lg:grid-cols-2 gap-6">
@@ -82,10 +95,12 @@ const Events = () => {
               <Card
                 title="Innovation pitch session"
                 desc="Platform for emerging startups and entrepreneurs"
+                delay={0.05}
               />
               <Card
                 title="Networking and exhibitions"
                 desc="Connect with potential investors and collaborators"
+                delay={0.1}
               />
             </div>
 
@@ -93,10 +108,12 @@ const Events = () => {
               <Card
                 title="Workshops and training"
                 desc="Learn from industry experts and professionals"
+                delay={0.15}
               />
               <Card
                 title="Side attractions"
                 desc="Music, art, and creative showcases"
+                delay={0.2}
               />
             </div>
           </div>
