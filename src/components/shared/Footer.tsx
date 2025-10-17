@@ -16,13 +16,21 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-6 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Logo */}
-          <div>
+          <div className="flex flex-col gap-4">
             <Link
               href="/"
               className="font-luckiest text-3xl tracking-wide font-bold"
             >
               De Gambit
             </Link>
+            <p className="leading-[30px]">
+              The December Chess Tournament is a first of its kind,
+              community-centered event powered by Reapvest in collaboration with
+              Netwiver. It brings together innovators, entrepreneurs,
+              professionals, students, and community members in a friendly but
+              impactful competition that fosters collaboration, innovation, and
+              growth.
+            </p>
           </div>
 
           {/* Event column */}
@@ -114,7 +122,7 @@ const Footer = () => {
               aria-label="Facebook"
               href="https://facebook.com"
               target="_blank"
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 transition-transform hover:scale-125 duration-500"
             >
               <FacebookIcon />
             </Link>
@@ -122,7 +130,7 @@ const Footer = () => {
               aria-label="Instagram"
               href="https://instagram.com"
               target="_blank"
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 transition-transform hover:scale-125 duration-500"
             >
               <InstagramIcon />
             </Link>
@@ -130,7 +138,7 @@ const Footer = () => {
               aria-label="X"
               href="https://x.com"
               target="_blank"
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 transition-transform hover:scale-125 duration-500"
             >
               <XIcon />
             </Link>
@@ -138,7 +146,7 @@ const Footer = () => {
               aria-label="LinkedIn"
               href="https://linkedin.com"
               target="_blank"
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 transition-transform hover:scale-125 duration-500"
             >
               <LinkedInIcon />
             </Link>
@@ -146,7 +154,7 @@ const Footer = () => {
               aria-label="YouTube"
               href="https://youtube.com"
               target="_blank"
-              className="opacity-90 hover:opacity-100"
+              className="opacity-90 hover:opacity-100 transition-transform hover:scale-125 duration-500"
             >
               <YoutubeIcon />
             </Link>
