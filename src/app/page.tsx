@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "De Gambit - Strategy, Innovation & Collaboration",
     description:
       "Join De Gambit - Strategy, Innovation & Collaboration. Participate in tournaments, networking events, and innovation sessions for chess players, tech enthusiasts, and entrepreneurs.",
-    url: "https://degambit.com",
+    url: "https://de-gambit.vercel.app",
     images: [
       {
         url: "/images/chess4.webp",
