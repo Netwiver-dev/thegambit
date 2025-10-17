@@ -2,8 +2,11 @@ import Benefits from "@/components/Benefits";
 import Events from "@/components/Events";
 import Hero from "@/components/Hero";
 import JoinExperience from "@/components/JoinExperience";
+import PartnersSection from "@/components/PartnersSection";
 import Preloader from "@/components/Preloader";
+import EventFeatures from "@/components/EventFeatures";
 import { Metadata } from "next";
+import Sponsorships from "@/components/Sponsorships";
 
 export const metadata: Metadata = {
   title: "DeGambit - Strategy, Innovation & Collaboration",
@@ -38,6 +41,9 @@ export default function Home() {
       <Hero />
       <Benefits />
       <Events />
+      <EventFeatures />
+      <Sponsorships />
+      <PartnersSection />
       <JoinExperience />
     </>
   );

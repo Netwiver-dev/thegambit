@@ -7,6 +7,8 @@ import InstagramIcon from "../icons/InstagramIcon";
 import XIcon from "../icons/XIcon";
 import LinkedInIcon from "../icons/LinkedInIcon";
 import YoutubeIcon from "../icons/YoutubeIcon";
+import EmailIcon from "../icons/EmailIcon";
+import PhoneIcon from "../icons/PhoneIcon";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -25,44 +27,62 @@ const Footer = () => {
             </Link>
             <p className="leading-[30px]">
               The December Chess Tournament is a first of its kind,
-              community-centered event powered by Reapvest in collaboration with
-              Netwiver. It brings together innovators, entrepreneurs,
-              professionals, students, and community members in a friendly but
-              impactful competition that fosters collaboration, innovation, and
-              growth.
+              community-centered event powered by{" "}
+              <a
+                href="https://reapvest.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="font-bold text-emerald-400/90 hover:underline"
+              >
+                Reapvest
+              </a>{" "}
+              in collaboration with&nbsp;
+              <a
+                href="https://netwiver.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="font-bold text-emerald-400/90 hover:underline"
+              >
+                Netwiver
+              </a>
+              . It brings together innovators, entrepreneurs, professionals,
+              students, and community members in a friendly but impactful
+              competition that fosters collaboration, innovation, and growth.
             </p>
           </div>
 
           {/* Event column */}
           <div>
             <h4 className="text-typography text-lg font-semibold mb-6">
-              Event
+              Contact
             </h4>
             <ul className="space-y-5">
               <li>
-                <Link href="#" className="opacity-90 hover:opacity-100">
-                  Chess tournament
-                </Link>
+                <a
+                  href="mailto:degambit@reapvest.com"
+                  className="flex items-center gap-2 w-fit text-lg text-navy-500 hover:underline hover:text-emerald-400/90"
+                >
+                  <EmailIcon />
+                  degambit@reapvest.com
+                </a>
               </li>
               <li>
-                <Link href="#" className="opacity-90 hover:opacity-100">
-                  Pitch session
-                </Link>
+                <a
+                  href="mailto:kafayat@netwiver.com"
+                  className="flex items-center gap-2 w-fit text-lg text-navy-500 hover:underline hover:text-emerald-400/90"
+                >
+                  <EmailIcon />
+                  kafayat@netwiver.com
+                </a>
               </li>
               <li>
-                <Link href="#" className="opacity-90 hover:opacity-100">
-                  Workshops
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="opacity-90 hover:opacity-100">
-                  Schedule
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="opacity-90 hover:opacity-100">
-                  Venue
-                </Link>
+                <a
+                  href="tel:+2348012345678"
+                  className="flex items-center gap-2 w-fit text-lg text-navy-500 hover:underline hover:text-emerald-400/90"
+                >
+                  <PhoneIcon />
+                  08111619869
+                </a>
               </li>
             </ul>
           </div>
